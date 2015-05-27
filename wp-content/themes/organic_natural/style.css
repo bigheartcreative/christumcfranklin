@@ -67,7 +67,7 @@ body {
 ************************************************/
 
 p {
-	padding: 12px 0px;
+	/*padding: 12px 0px;*/
 	margin: 0px;
 	}
 p:empty {
@@ -2362,15 +2362,15 @@ a, a:link {
 ************************************************/
 #topbar {
 	background: rgb(84, 83, 81);
-	height: 30px;
-	margin: 0 -50px;
+	height: 40px;
+	margin: 0 -48px;
 	padding: 5px 48px;
 }
 
 #topbar p {
 	color: rgb(200, 199, 199);
 	letter-spacing: 2px;
-	padding: 0;
+	padding-top: 5px;
 }
 
 #topbar p a {
