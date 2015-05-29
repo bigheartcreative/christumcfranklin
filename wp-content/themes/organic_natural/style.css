@@ -278,7 +278,7 @@ h5 {
 h6 {
 	color: #333333;
 	font-size: 1.1em;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.4;
 	letter-spacing: 0.2px;
@@ -287,13 +287,14 @@ h6 {
 	border-bottom: 1px solid rgba(0,0,0, .08);
 	}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #333333;
 	text-decoration: none;
 	border: none;
-	}
+	}x
 h1 a:hover, h2 a:hover, h3 a:hover,
 h4 a:hover, h5 a:hover, h6 a:hover {
-	color: #669900;
+	color: #333333;
 	text-decoration: none;
 	border: none;
 	}
@@ -1562,7 +1563,13 @@ img.alignleft {
 .tagcloud {
 	line-height: 1.2;
 	}
-	
+#gform_widget-12 li {
+	padding: 0;
+}
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+	width: 100%;
+}
+
 /************************************************
 *	15.	RSS Widget								*
 ************************************************/
@@ -1642,8 +1649,8 @@ img.alignleft {
 .widget ul.menu li {
 	float: none;
 	display: block;
-	margin: 2px 0px;
-	padding: 6px 12px;
+	margin: 0;
+	padding: 6px 0;
 	width: auto;
 	}
 .widget ul.menu li:hover {
@@ -1767,7 +1774,7 @@ img.alignleft {
 .footer-widgets {
 	background: rgb(227, 227, 227);
 	margin: 0px auto 0px;
-	padding: 24px;
+	padding: 24px 36px;
 	overflow: hidden;
 	border-top: 1px solid rgb(204, 204, 204);
 	border-bottom: 1px solid rgb(204, 204, 204);
@@ -1809,7 +1816,14 @@ img.alignleft {
 	color: rgb(113, 113, 113);
 	margin-bottom: 0;
 }
-
+.footer h6 a, .footer h6 a:hover {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(113, 113, 113);
+	margin-bottom: 0;
+	text-decoration: none;
+}
 
 
 /************************************************
