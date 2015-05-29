@@ -409,9 +409,9 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 	display: block;
 	color: rgb(102, 102, 102);
 	position: relative;
-	font-size: 0.75em;
-	font-weight: 400;
-	font-family: /*'Montserrat',*/ "Lucida Grand",  Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: "Oswald",  Arial, Helvetica, sans-serif;
 	margin: 0px 0px 24px 0px;
 	padding: 0px;
 	z-index: 9999;
@@ -465,6 +465,8 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 	display: inline-block;
 	position: relative;
 	}
+
+
 .menu li:hover ul,
 .menu li.sfHover ul {
 	left: 0;
@@ -495,14 +497,12 @@ ul.menu li li li.sfHover ul {
 #navigation .menu .current_page_ancestor a,
 #navigation .menu .current-menu-item a,
 #navigation .menu .current-cat a {
-	background: rgba(0, 0, 0, .4);
-	color: #FFFFFF;
+	color: rgb(0, 153, 227);
 	}
 #navigation .menu li .current_page_item a, #navigation .menu li .current_page_item a:hover,
 #navigation .menu li .current-menu-item a, #navigation .menu li .current-menu-item a:hover,
 #navigation .menu li .current-cat a, #navigation .menu li .current-cat a:hover {
-	background: rgba(0, 0, 0, .4);
-	color: #FFFFFF;
+	color: rgb(0, 153, 227);
 	}
 #navigation .menu .current_page_item ul li a,
 #navigation .menu .current-menu-item ul li a,
@@ -522,7 +522,7 @@ ul.menu li li li.sfHover ul {
 #navigation .menu .current_page_ancestor ul .current-menu-item a,
 #navigation .menu .current-cat ul li a:hover {
 	background: rgba(0, 0, 0, .4);
-	color: #FFFFFF;
+	//color: #FFFFFF;
 	}
 .menu {
 	margin-bottom: 0;
@@ -554,14 +554,10 @@ ul.menu li li li.sfHover ul {
 	}
 .menu a:focus, 
 .menu a:hover, 
-.menu a:active {
-	background: rgba(0, 0, 0, .4);
-	outline: 0;
-	}
 #wrap .menu a:focus, 
 #wrap .menu a:hover, 
 #wrap .menu a:active {
-	color: #FFFFFF;
+	color: rgb(0, 153, 227);
 	}
 .menu li li a {
 	display: block;
@@ -583,7 +579,7 @@ ul.menu li li li.sfHover ul {
 .menu li li a:focus,
 .menu li li a:hover,
 .menu li li a:active {
-	background: rgba(0, 0, 0, .2);
+	//background: rgba(0, 0, 0, .2);
 	outline: 0;
 	} 
 .menu li li a:hover {
@@ -593,7 +589,7 @@ ul.menu li li li.sfHover ul {
 	color: #FFFFFF;
 	}
 .menu li.sfHover:hover {
-	background: rgba(0, 0, 0, .2);
+	//background: rgba(0, 0, 0, .2);
 	outline: 0;
 	} 
 .menu li {
@@ -630,6 +626,11 @@ ul.menu li li li.sfHover ul {
 	color: rgb(102, 102, 102);
 }
 
+
+#menu-main-menu {
+	float: right;
+	margin-top: 60px;
+}
 
 /*** ARROWS **/
 .sf-arrows .sf-with-ul {
