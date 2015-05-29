@@ -35,7 +35,7 @@
 
 <!-- Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 
 <!-- Social Buttons -->
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
@@ -65,8 +65,8 @@
 			<!-- BEGIN .row -->
 			<div class="row">
 				
-				<!-- BEGIN .seven columns -->
-				<div class="seven columns">
+				<!-- BEGIN .four columns -->
+				<div class="four columns">
 				
 				<?php if (is_home() || is_front_page() ) { ?>
 					<?php $natural_logo = natural_get_logo_url(); if ( ! empty( $natural_logo ) ) { ?>
@@ -108,8 +108,8 @@
 
 <nav id="navigation" class="navigation-main shadow <?php if ( is_home() ) { ?>radius-top home-nav<?php } else { ?>radius-full<?php } ?>" role="navigation">
 		
-			<!-- BEGIN .nine columns -->
-			<div class="nine columns">
+			<!-- BEGIN .twelve columns -->
+			<div class="twelve columns">
 				
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'organicthemes' ); ?></h1>
 	

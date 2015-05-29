@@ -409,10 +409,10 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 	display: block;
 	color: rgb(102, 102, 102);
 	position: relative;
-	font-size: 1.5em;
-	font-weight: normal;
+	font-size: 1.6em;
+	font-weight: 400;
 	font-family: "Oswald",  Arial, Helvetica, sans-serif;
-	margin: 0px 0px 24px 0px;
+	margin: 60px 0px 24px 0px;
 	padding: 0px;
 	z-index: 9999;
 	}
@@ -544,7 +544,7 @@ ul.menu li li li.sfHover ul {
 	/*text-shadow: 1px 1px rgba(0, 0, 0, .6);*/
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
-	margin: 0px;
+	margin-left: 20px;
 	padding: 0px 12px;
 	/*border-left: 1px solid rgba(255, 255, 255, .1);*/
 	/*border-right: 1px solid rgba(0, 0, 0, .6);*/
@@ -629,7 +629,6 @@ ul.menu li li li.sfHover ul {
 
 #menu-main-menu {
 	float: right;
-	margin-top: 60px;
 }
 
 /*** ARROWS **/
