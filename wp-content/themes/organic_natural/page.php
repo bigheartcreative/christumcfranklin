@@ -105,45 +105,7 @@ get_header(); ?>
 <?php } ?>
 	<?php } ?>
 	
-	<?php if (of_get_option('display_home_bottom') == '1') { ?>
-	<?php if ( '-1' != of_get_option( 'category_news' ) ) { ?>
-	<?php if ( is_active_sidebar( 'home-sidebar' ) ) : ?>
 	
-		<!-- BEGIN .featured-posts -->
-		<div class="featured-posts">
-	
-			<!-- BEGIN .eight columns -->
-			<div class="eleven columns">
-			
-				<!-- BEGIN .home-news -->
-				<div class="home-news radius-full shadow">
-				
-					<?php get_template_part( 'content/home', 'post' ); ?>
-				
-				<!-- END .home-news -->
-				</div>
-			
-			<!-- END .eight columns -->
-			</div>
-			
-			<!-- BEGIN .five columns -->
-			<div class="five columns">
-			
-				<?php get_sidebar('home'); ?>
-				
-			<!-- END .five columns -->
-			</div>
-	
-		<!-- END .featured-posts -->
-		</div>
-	
-	<?php else : ?>
-	
-		
-	
-	<?php endif; ?>
-	<?php } ?>
-	<?php } ?>
 
 	<!-- END .homepage -->
 	</div>
