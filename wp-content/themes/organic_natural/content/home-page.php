@@ -9,7 +9,7 @@
 	
 	<!-- BEGIN .article -->
 	<div class="article">
-		
+
 		<div class="text-holder">
 			<h2 class="title text-center"><?php the_title(); ?></h2>
 			<?php the_excerpt(); ?>

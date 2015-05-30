@@ -9,6 +9,7 @@
 get_header(); ?>
 
 <!-- BEGIN .post class -->
+
 <div <?php post_class(); ?> id="page-<?php the_ID(); ?>">
 
 	<?php if ( has_post_thumbnail()) { ?>
