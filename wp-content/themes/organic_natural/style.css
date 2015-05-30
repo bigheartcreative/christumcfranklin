@@ -103,7 +103,7 @@ ul li {
     list-style: inside;
     list-style-type: square;
     margin: 6px 0px;
-	padding: 0px 0px 0px 12px;
+	padding: 0px 0px 0px 0px;
 	}
 ul ol li, ul ol ul ol li {
     list-style-type: decimal;
@@ -240,7 +240,7 @@ h1 {
 h2 {
 	color: #333333;
 	font-size: 2.2em;
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Oswald', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.4;
 	letter-spacing: -0.6px;
@@ -315,12 +315,15 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 	font-size: 1.6em;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-shadow: 2px 2px 0px rgba(0, 0, 0, .1);
-	letter-spacing: -1px;
+	letter-spacing: 1px;
 	line-height: 1.2;
-	margin: 0px;
+	margin: 0 0 10px 0;
 	padding: 0px;
 	}
+.text-holder p {
+	font-size: 14px;
+	color: black;
+}
 
 /************************************************
 *	3.	Header  								*
@@ -926,6 +929,12 @@ html[xmlns] .slides {
 .featured-pages a.button {
 	display: block;
 	margin-bottom: 0px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	width: 40%;
+	margin: 12px auto;
+	padding: 6px 0;
 	}
 .featured-posts {
 	display: inline-block;
@@ -993,7 +1002,7 @@ html[xmlns] .slides {
 .postarea {
 	background: #FFFFFF;
 	margin-bottom: 24px;
-	padding: 36px;
+	//padding: 36px;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
@@ -1003,7 +1012,7 @@ html[xmlns] .slides {
 	-webkit-border-radius: 2px;
 	}
 .postarea.full {
-	padding: 48px;
+	//padding: 48px;
 	}
 .postarea.middle {
 	padding: 24px;
@@ -2019,9 +2028,8 @@ a.button, .reply a, #searchsubmit, #prevLink a, #nextLink a, .more-link,
 	position: relative;
 	top: -2px;
 	background-color: #F9F9F9;
-	color: #666666 !important;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 300;
 	font-style: normal;
 	margin: 12px 0px;
 	padding: 6px 18px;
@@ -2030,15 +2038,17 @@ a.button, .reply a, #searchsubmit, #prevLink a, #nextLink a, .more-link,
 	-khtml-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border: none;
-	box-shadow: 0px 3px 0px rgba(0, 0, 0, .2);
-	-moz-box-shadow: 0px 3px 0px rgba(0, 0, 0, .2);
-	-webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, .2);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)),to(rgba(0, 0, 0, 0.10)));
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
+	background: #00b6ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00b6ff 0%, #0099e4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b6ff), color-stop(100%,#0099e4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00b6ff 0%,#0099e4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
+
+
+
 	}
 a.button:hover, .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLink a:hover, .more-link:hover,
 #submit:hover, #comments #respond input#submit:hover, .container .gform_wrapper input.button:hover {
