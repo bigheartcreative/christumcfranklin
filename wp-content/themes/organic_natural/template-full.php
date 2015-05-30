@@ -38,6 +38,8 @@ get_header(); ?>
 	</div>
 
 <!-- END .post class -->
+
+<?php get_sidebar('home'); ?>
 </div>
 
 <?php get_footer(); ?>
