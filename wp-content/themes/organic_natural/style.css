@@ -1543,12 +1543,13 @@ img.alignleft {
 	-webkit-transition: background .25s, box-shadow .25s;
 	-o-transition: background .25s, box-shadow .25s;
 	}
-.widget ul > li:hover {
+/*.widget ul > li:hover {
 	background: rgba(0, 0, 0, .04);
 	box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-moz-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-webkit-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	}
+*/
 .widget li a {
 	margin: 0px;
 	padding: 0px;
@@ -1653,12 +1654,14 @@ img.alignleft {
 	padding: 6px 0;
 	width: auto;
 	}
+/*
 .widget ul.menu li:hover {
 	background: rgba(0, 0, 0, .04);
 	box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-moz-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-webkit-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	}
+*/
 .widget ul.menu li span {
 	top: 1px;
 	right: 0px;
