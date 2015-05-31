@@ -33,12 +33,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php echo esc_url( bloginfo('pingback_url') ); ?>">
 
-<!-- Google Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-
 <!-- Social Buttons -->
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 
 <?php wp_head(); ?>
