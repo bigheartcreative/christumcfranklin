@@ -1,6 +1,11 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<h1 class="headline"><?php the_title(); ?></h1>
+
+<?php if (is_front_page() ) 
+	{ /*Do nothing*/ } 
+	else { ?>
+		<h1 class="headline"><?php the_title(); ?></h1> 
+<?php } ?>
 
 <?php the_content(__("Read More", 'organicthemes')); ?>
 

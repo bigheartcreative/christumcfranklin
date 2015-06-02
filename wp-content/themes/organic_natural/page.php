@@ -9,6 +9,7 @@
 get_header(); ?>
 
 <!-- BEGIN .post class -->
+
 <div <?php post_class(); ?> id="page-<?php the_ID(); ?>">
 
 	<?php if ( has_post_thumbnail()) { ?>
@@ -49,7 +50,7 @@ get_header(); ?>
 	
 				<!-- BEGIN .postarea full -->
 				<div class="postarea full">
-		
+			
 					<?php get_template_part( 'loop', 'page' ); ?>
 				
 				<!-- END .postarea full -->
@@ -64,6 +65,54 @@ get_header(); ?>
 	</div>
 	
 <!-- END .post class -->
+</div>
+
+
+<!-- BELOW TAKEN FROM HOME.PHP -->
+
+<!-- BEGIN .row -->
+<div class="row">
+
+	<!-- BEGIN .homepage -->
+	<div class="homepage">
+	
+	<?php if (of_get_option('display_home_mid') == '1') { ?>
+	<?php if ( 'false' != of_get_option( 'page_left' ) && 'false' != of_get_option( 'page_mid' ) && 'false' != of_get_option( 'page_right' ) ) { ?>
+		
+		<!-- BEGIN .featured-pages -->
+		<div class="featured-pages radius-full">
+		
+			<div class="holder third first">
+				<?php $recent = new WP_Query('page_id='.of_get_option('page_left')); while($recent->have_posts()) : $recent->the_post(); ?>
+					<?php get_template_part( 'content/home', 'page' ); ?>
+				<?php endwhile; ?>
+			</div>
+			
+			<div class="holder third">
+				<?php $recent = new WP_Query('page_id='.of_get_option('page_mid')); while($recent->have_posts()) : $recent->the_post(); ?>
+					<?php get_template_part( 'content/home', 'page' ); ?>
+				<?php endwhile; ?>
+			</div>
+			
+			<div class="holder third last">
+				<?php $recent = new WP_Query('page_id='.of_get_option('page_right')); while($recent->have_posts()) : $recent->the_post(); ?>
+					<?php get_template_part( 'content/home', 'page' ); ?>
+				<?php endwhile; ?>
+			</div>
+		
+		<!-- END .featured-pages -->
+		</div>
+
+<?php } ?>
+	<?php } ?>
+	
+	
+
+	<!-- END .homepage -->
+	</div>
+
+
+<!-- END .row -->
 </div>
 
 <?php get_footer(); ?>

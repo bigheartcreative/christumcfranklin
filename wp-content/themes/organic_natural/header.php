@@ -34,7 +34,6 @@
 <link rel="pingback" href="<?php echo esc_url( bloginfo('pingback_url') ); ?>">
 
 <!-- Social Buttons -->
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 
 <?php wp_head(); ?>
@@ -47,6 +46,13 @@
 
 	<!-- BEGIN .container -->
 	<div class="container">
+
+	<! -- BEGIN #topbar -->
+		<div id="topbar">
+			<p class="left">We Are About Relationships</p>
+			<p class="right"><a href="#">Contact Us</a></p>
+		</div>
+	<!-- END #topbar -->
 	
 		<!-- BEGIN #header -->
 		<div id="header">
@@ -54,8 +60,8 @@
 			<!-- BEGIN .row -->
 			<div class="row">
 				
-				<!-- BEGIN .sixteen columns -->
-				<div class="sixteen columns">
+				<!-- BEGIN .four columns -->
+				<div class="four columns">
 				
 				<?php if (is_home() || is_front_page() ) { ?>
 					<?php $natural_logo = natural_get_logo_url(); if ( ! empty( $natural_logo ) ) { ?>
@@ -89,20 +95,16 @@
 					<?php } ?>
 				<?php } ?>
 				
-				<!-- END .sixteen columns -->
+				<!-- END .four columns -->
 				</div>
-			
-			<!-- END .row -->
-			</div>
+
+
+
+
+<nav id="navigation" class="navigation-main shadow <?php if ( is_home() ) { ?>radius-top home-nav<?php } else { ?>radius-full<?php } ?>" role="navigation">
 		
-		<!-- END #header -->
-		</div>
-		
-		<!-- BEGIN #navigation -->
-		<nav id="navigation" class="navigation-main shadow <?php if ( is_home() ) { ?>radius-top home-nav<?php } else { ?>radius-full<?php } ?>" role="navigation">
-		
-			<!-- BEGIN .row -->
-			<div class="row">
+			<!-- BEGIN .twelve columns -->
+			<div class="twelve columns">
 				
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'organicthemes' ); ?></h1>
 	
@@ -123,4 +125,11 @@
 			</div>
 		
 		<!-- END #navigation -->
-		</nav>
+		</nav>				
+			
+			<!-- END .row -->
+			</div>
+		
+		<!-- END #header -->
+		</div>
+		

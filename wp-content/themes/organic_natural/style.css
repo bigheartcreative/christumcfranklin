@@ -44,6 +44,7 @@
 	24. CSS3 Styles
 	25. WooCommerce
 	26. Grid
+	27. Topbar
 	  
 *******************************************************************************************************************/
 
@@ -55,7 +56,7 @@ body {
 	color: #666666;
 	font-size: 0.9em;
 	font-weight: 300;
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	line-height: 1.8;
 	margin: 0px;
 	padding: 0px;
@@ -66,7 +67,7 @@ body {
 ************************************************/
 
 p {
-	padding: 12px 0px;
+	/*padding: 12px 0px;*/
 	margin: 0px;
 	}
 p:empty {
@@ -102,7 +103,7 @@ ul li {
     list-style: inside;
     list-style-type: square;
     margin: 6px 0px;
-	padding: 0px 0px 0px 12px;
+	padding: 0px 0px 0px 0px;
 	}
 ul ol li, ul ol ul ol li {
     list-style-type: decimal;
@@ -239,7 +240,7 @@ h1 {
 h2 {
 	color: #333333;
 	font-size: 2.2em;
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Oswald', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.4;
 	letter-spacing: -0.6px;
@@ -277,7 +278,7 @@ h5 {
 h6 {
 	color: #333333;
 	font-size: 1.1em;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.4;
 	letter-spacing: 0.2px;
@@ -286,13 +287,14 @@ h6 {
 	border-bottom: 1px solid rgba(0,0,0, .08);
 	}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #333333;
 	text-decoration: none;
 	border: none;
-	}
+	}x
 h1 a:hover, h2 a:hover, h3 a:hover,
 h4 a:hover, h5 a:hover, h6 a:hover {
-	color: #669900;
+	color: #333333;
 	text-decoration: none;
 	border: none;
 	}
@@ -313,12 +315,15 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 	font-size: 1.6em;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-shadow: 2px 2px 0px rgba(0, 0, 0, .1);
-	letter-spacing: -1px;
+	letter-spacing: 1px;
 	line-height: 1.2;
-	margin: 0px;
+	margin: 0 0 10px 0;
 	padding: 0px;
 	}
+.text-holder p {
+	font-size: 14px;
+	color: black;
+}
 
 /************************************************
 *	3.	Header  								*
@@ -382,9 +387,10 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 #logo img {
 	display: block;
 	height: auto;
-	margin: 0px auto 0px;
+	margin: /*0px auto 0px;*/  40px auto;
 	padding: 0px;
 	vertical-align: bottom;
+	float: left; /* FLOAT MAIN LOGO LEFT */
 	}
 #custom-header {
 	position: absolute;
@@ -405,12 +411,12 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 
 #navigation {
 	display: block;
-	color: #999999;
+	color: rgb(102, 102, 102);
 	position: relative;
-	font-size: 0.75em;
+	font-size: 1.6em;
 	font-weight: 400;
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	margin: 0px 0px 24px 0px;
+	font-family: "Oswald",  Arial, Helvetica, sans-serif;
+	margin: 60px 0px 24px 0px;
 	padding: 0px;
 	z-index: 9999;
 	}
@@ -463,6 +469,8 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 	display: inline-block;
 	position: relative;
 	}
+
+
 .menu li:hover ul,
 .menu li.sfHover ul {
 	left: 0;
@@ -493,14 +501,12 @@ ul.menu li li li.sfHover ul {
 #navigation .menu .current_page_ancestor a,
 #navigation .menu .current-menu-item a,
 #navigation .menu .current-cat a {
-	background: rgba(0, 0, 0, .4);
-	color: #FFFFFF;
+	color: rgb(0, 153, 227);
 	}
 #navigation .menu li .current_page_item a, #navigation .menu li .current_page_item a:hover,
 #navigation .menu li .current-menu-item a, #navigation .menu li .current-menu-item a:hover,
 #navigation .menu li .current-cat a, #navigation .menu li .current-cat a:hover {
-	background: rgba(0, 0, 0, .4);
-	color: #FFFFFF;
+	color: rgb(0, 153, 227);
 	}
 #navigation .menu .current_page_item ul li a,
 #navigation .menu .current-menu-item ul li a,
@@ -520,7 +526,7 @@ ul.menu li li li.sfHover ul {
 #navigation .menu .current_page_ancestor ul .current-menu-item a,
 #navigation .menu .current-cat ul li a:hover {
 	background: rgba(0, 0, 0, .4);
-	color: #FFFFFF;
+	//color: #FFFFFF;
 	}
 .menu {
 	margin-bottom: 0;
@@ -539,27 +545,23 @@ ul.menu li li li.sfHover ul {
 	background: none;
 	line-height: 48px;
 	text-decoration: none;
-	text-shadow: 1px 1px rgba(0, 0, 0, .6);
+	/*text-shadow: 1px 1px rgba(0, 0, 0, .6);*/
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
-	margin: 0px;
+	margin-left: 20px;
 	padding: 0px 12px;
-	border-left: 1px solid rgba(255, 255, 255, .1);
-	border-right: 1px solid rgba(0, 0, 0, .6);
+	/*border-left: 1px solid rgba(255, 255, 255, .1);*/
+	/*border-right: 1px solid rgba(0, 0, 0, .6);*/
 	}
 #wrap .menu a {
-	color: rgba(255, 255, 255, .7);
+	color: rgba(102, 102, 102);
 	}
 .menu a:focus, 
 .menu a:hover, 
-.menu a:active {
-	background: rgba(0, 0, 0, .4);
-	outline: 0;
-	}
 #wrap .menu a:focus, 
 #wrap .menu a:hover, 
 #wrap .menu a:active {
-	color: #FFFFFF;
+	color: rgb(0, 153, 227);
 	}
 .menu li li a {
 	display: block;
@@ -581,7 +583,7 @@ ul.menu li li li.sfHover ul {
 .menu li li a:focus,
 .menu li li a:hover,
 .menu li li a:active {
-	background: rgba(0, 0, 0, .2);
+	//background: rgba(0, 0, 0, .2);
 	outline: 0;
 	} 
 .menu li li a:hover {
@@ -591,7 +593,7 @@ ul.menu li li li.sfHover ul {
 	color: #FFFFFF;
 	}
 .menu li.sfHover:hover {
-	background: rgba(0, 0, 0, .2);
+	//background: rgba(0, 0, 0, .2);
 	outline: 0;
 	} 
 .menu li {
@@ -623,6 +625,16 @@ ul.menu li li li.sfHover ul {
 	-webkit-border-radius: 0px;
 	}
 	
+
+.container a, .container a:link, .container a:visited, #wrap .widget ul.menu li a {
+	color: rgb(102, 102, 102);
+}
+
+
+#menu-main-menu {
+	float: right;
+}
+
 /*** ARROWS **/
 .sf-arrows .sf-with-ul {
 	padding-right: 2em;
@@ -917,6 +929,12 @@ html[xmlns] .slides {
 .featured-pages a.button {
 	display: block;
 	margin-bottom: 0px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	width: 40%;
+	margin: 12px auto;
+	padding: 6px 0;
 	}
 .featured-posts {
 	display: inline-block;
@@ -984,7 +1002,7 @@ html[xmlns] .slides {
 .postarea {
 	background: #FFFFFF;
 	margin-bottom: 24px;
-	padding: 36px;
+	//padding: 36px;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
@@ -994,7 +1012,7 @@ html[xmlns] .slides {
 	-webkit-border-radius: 2px;
 	}
 .postarea.full {
-	padding: 48px;
+	//padding: 48px;
 	}
 .postarea.middle {
 	padding: 24px;
@@ -1534,12 +1552,13 @@ img.alignleft {
 	-webkit-transition: background .25s, box-shadow .25s;
 	-o-transition: background .25s, box-shadow .25s;
 	}
-.widget ul > li:hover {
+/*.widget ul > li:hover {
 	background: rgba(0, 0, 0, .04);
 	box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-moz-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-webkit-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	}
+*/
 .widget li a {
 	margin: 0px;
 	padding: 0px;
@@ -1554,7 +1573,13 @@ img.alignleft {
 .tagcloud {
 	line-height: 1.2;
 	}
-	
+#gform_widget-12 li {
+	padding: 0;
+}
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+	width: 100%;
+}
+
 /************************************************
 *	15.	RSS Widget								*
 ************************************************/
@@ -1617,7 +1642,7 @@ img.alignleft {
 .widget ul.menu li a {
 	display: block;
 	background: none;
-	color: #99CC33;
+	color: rgb(0, 153, 227);
 	height: auto;
 	font-size: 1em;
 	text-transform: none;
@@ -1628,22 +1653,24 @@ img.alignleft {
 	border: none !important;
 	}
 .widget ul.menu li a:hover {
-	color: #669900;
+	color: rgb(0, 153, 227);
 	text-decoration: underline;
 	}
 .widget ul.menu li {
 	float: none;
 	display: block;
-	margin: 2px 0px;
-	padding: 6px 12px;
+	margin: 0;
+	padding: 6px 0;
 	width: auto;
 	}
+/*
 .widget ul.menu li:hover {
 	background: rgba(0, 0, 0, .04);
 	box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-moz-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	-webkit-box-shadow: inset 0px 3px 0px rgba(0, 0, 0, .08);
 	}
+*/
 .widget ul.menu li span {
 	top: 1px;
 	right: 0px;
@@ -1666,6 +1693,16 @@ img.alignleft {
 .widget ul.menu li ul.sub-menu li ul.sub-menu li {
 	display: none;
 	}
+
+#wrap .widget ul.menu li a {
+	font-size: 14px;
+	color: rgb(0, 153, 227);
+}
+
+#wrap .widget ul.menu li a:hover {
+	color: rgb(0, 153, 227);
+	text-decoration: underline;
+}
 	
 /************************************************
 *	18.	Search Form								*
@@ -1722,31 +1759,37 @@ img.alignleft {
 
 .footer {
 	background: rgba(0, 0, 0, .06);
-	max-width: 1120px;
+	max-width: 1176px;  /* Originally 1120px */
 	margin: 0px auto 0px;
 	padding: 0px;
 	overflow: hidden;
 	}
 .footer p {
+	color: rgb(113, 113, 113);
+	letter-spacing: .5px;
 	margin: 0px;
 	padding: 0px;
 	}
 .footer a {
-	color: rgba(0, 0, 0, .35);
+	font-size: 14px;
+	color: rgb(0, 153, 227);
 	font-weight: 400;
 	}
 .footer a:hover {
-	color: rgba(0, 0, 0, .6);
+	color: rgb(0, 153, 227);
+	text-decoration: underline;
 	}
 .footer .align-left {
 	font-size: 0.9em;
 	line-height: 1.8;
 	}
 .footer-widgets {
+	background: rgb(227, 227, 227);
 	margin: 0px auto 0px;
-	padding: 24px;
+	padding: 24px 36px;
 	overflow: hidden;
-	border-bottom: 1px solid rgba(0, 0, 0, .08);
+	border-top: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
 	}
 .footer-widgets .widget {
 	float: left;
@@ -1763,12 +1806,37 @@ img.alignleft {
 	padding: 12px;
 	}
 .footer-information {
+	background: rgb(238, 238, 238);
 	padding: 48px;
 	overflow: hidden;
 	}
+.footer-information p {
+	color: rgb(129, 129, 129);
+	font-size: 12px;
+}
+.footer-information p a {
+	float: left;
+	margin-right: 20px;
+	font-size: 12px;
+}
 .footer-content {
 	margin: 0px auto 0px;
 	}
+.footer h6 {
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(113, 113, 113);
+	margin-bottom: 0;
+}
+.footer h6 a, .footer h6 a:hover {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgb(113, 113, 113);
+	margin-bottom: 0;
+	text-decoration: none;
+}
+
 
 /************************************************
 *	20.	Comments								*
@@ -1960,9 +2028,8 @@ a.button, .reply a, #searchsubmit, #prevLink a, #nextLink a, .more-link,
 	position: relative;
 	top: -2px;
 	background-color: #F9F9F9;
-	color: #666666 !important;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 300;
 	font-style: normal;
 	margin: 12px 0px;
 	padding: 6px 18px;
@@ -1971,15 +2038,17 @@ a.button, .reply a, #searchsubmit, #prevLink a, #nextLink a, .more-link,
 	-khtml-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border: none;
-	box-shadow: 0px 3px 0px rgba(0, 0, 0, .2);
-	-moz-box-shadow: 0px 3px 0px rgba(0, 0, 0, .2);
-	-webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, .2);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)),to(rgba(0, 0, 0, 0.10)));
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.10));
+	background: #00b6ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00b6ff 0%, #0099e4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b6ff), color-stop(100%,#0099e4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00b6ff 0%,#0099e4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
+
+
+
 	}
 a.button:hover, .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLink a:hover, .more-link:hover,
 #submit:hover, #comments #respond input#submit:hover, .container .gform_wrapper input.button:hover {
@@ -2268,6 +2337,7 @@ a, a:link {
 	max-width: 1080px;
 	margin: 0px auto 0px;
 	padding: 0px 48px;
+	background: #fff;  /* CHANGE BACKGROUND TO WHITE */
 	}
 .row { 
 	width: 100%; 
@@ -2313,3 +2383,49 @@ a, a:link {
 .row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display:table; }
 .row:after, .clearfix:after { clear: both; }
 .row, .clearfix { zoom: 1; }
+
+/************************************************
+*	27.	Topbar	 					     	    * 
+************************************************/
+#topbar {
+	background: rgb(84, 83, 81);
+	height: 40px;
+	margin: 0 -48px;
+	padding: 5px 48px;
+}
+
+#topbar p {
+	color: rgb(200, 199, 199);
+	letter-spacing: 2px;
+	padding-top: 5px;
+}
+
+#topbar p a {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 3px 8px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+
+#topbar p a:hover {
+	background: #fff;
+	color: rgb(84, 83, 81);
+	text-decoration: none;
+}
+
+
+/************************************************
+*		Floats	 					     	    * 
+************************************************/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
