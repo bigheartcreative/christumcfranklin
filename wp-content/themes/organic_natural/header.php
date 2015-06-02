@@ -47,7 +47,7 @@
 	<!-- BEGIN .container -->
 	<div class="container">
 
-	<! -- BEGIN #topbar -->
+	<!-- BEGIN #topbar -->
 		<div id="topbar">
 			<p class="left">We Are About Relationships</p>
 			<p class="right"><a href="#">Contact Us</a></p>
