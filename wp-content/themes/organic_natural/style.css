@@ -899,6 +899,10 @@ html[xmlns] .slides {
 .homepage .third {
 	float: left;
 	}
+.inner_page_article h2{
+	text-align: left;
+	font-size: 30px;
+}
 .featured-pages {
 	display: inline-block;
 	width: 100%;
