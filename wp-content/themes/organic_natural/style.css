@@ -387,7 +387,7 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 #logo img {
 	display: block;
 	height: auto;
-	margin: /*0px auto 0px;*/  40px auto;
+	margin: 20px auto 40px;
 	padding: 0px;
 	vertical-align: bottom;
 	float: left; /* FLOAT MAIN LOGO LEFT */
@@ -633,6 +633,7 @@ ul.menu li li li.sfHover ul {
 
 #menu-main-menu {
 	float: right;
+	margin-top: 15px;
 }
 
 /*** ARROWS **/

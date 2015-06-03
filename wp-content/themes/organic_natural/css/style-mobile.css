@@ -22,7 +22,7 @@
 	/* Theme */
 	
 	.container {
-		margin: 12px;
+		//margin: 12px;
 		padding: 0px 24px;
 		}
 	.menu a {
@@ -33,6 +33,7 @@
 	#navigation {
 		font-size: 1.3em;
 		margin-left: 0px;
+		margin-top: 30px;
 	}
 	.slideshow .information p {
 		display: none;
@@ -148,7 +149,7 @@
 	/* Theme */
 	
 	.container {
-		margin: 12px;
+		//margin: 12px;
 		padding: 0px;
 		}
 	#header {
@@ -258,6 +259,7 @@
 		}
 	#menu-main-menu{
 		float: none;
+		margin-top: ;
 	}
 	.slideshow .loading {
 		min-height: 180px;
@@ -401,7 +403,8 @@
 		font-size: .75rem;
 	}
 	#logo img {
-		margin: 20px auto 0px;
+		width: 60%;
+		margin: 20px auto;
 		float: none;
 	}
 	.footer-information {
