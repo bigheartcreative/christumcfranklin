@@ -24,9 +24,10 @@ get_header(); ?>
 		<div class="sixteen columns">
 	
 			<!-- BEGIN .postarea full -->
-			<div class="postarea full">
+			<div class="postarea full content_area" >
 	
 				<?php get_template_part( 'loop', 'page' ); ?>
+
 	
 			<!-- END .postarea full -->
 			</div>
@@ -39,41 +40,6 @@ get_header(); ?>
 
 <!-- END .post class -->
 </div>
-
-<!-- BELOW TAKEN FROM HOME.PHP -->
-
-<!-- BEGIN .row -->
-<div class="row">
-	
-	<!-- BEGIN .homepage -->
-	<div class="homepage">
-
-		<!-- BEGIN .featured-pages -->
-		<div class="featured-pages radius-full">
-		
-			<div class="holder third first inner_page_article">
-				<?php $recent = new WP_Query('page_id=14'); while($recent->have_posts()) : $recent->the_post(); ?>
-					<?php get_template_part( 'content/home', 'page' ); ?>
-				<?php endwhile; ?>
-			</div>
-			
-			<div class="holder third inner_page_article">
-				<?php $recent = new WP_Query('page_id=17'); while($recent->have_posts()) : $recent->the_post(); ?>
-					<?php get_template_part( 'content/home', 'page' ); ?>
-				<?php endwhile; ?>
-			</div>
-			
-			<div class="holder third last inner_page_article">
-				<?php $recent = new WP_Query('page_id=18'); while($recent->have_posts()) : $recent->the_post(); ?>
-					<?php get_template_part( 'content/home', 'page' ); ?>
-				<?php endwhile; ?>
-			</div>
-		
-		<!-- END .featured-pages -->
-		</div>
-
-	<!-- END .homepage -->
-	</div>
 
 <!-- END .row -->
 </div>

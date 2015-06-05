@@ -1088,6 +1088,9 @@ html[xmlns] .slides {
 	}
 .bypostauthor {
 	}
+.content_area {
+	padding-bottom: 75px;
+}
 	
 /************************************************
 *	8.	Social Media   							*
@@ -1332,7 +1335,12 @@ img.alignleft {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	}
-	
+	.img-holder a img {
+		width: 100%;
+	}
+	img.attachment-featured-large.wp-post-image {
+		width: 100%;
+	}
 /************************************************
 *	11.	Portfolio 								*
 ************************************************/
@@ -1532,14 +1540,14 @@ img.alignleft {
 .widget {
 	background: #FFFFFF;
 	margin-bottom: 24px;
-	padding: 24px;
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
+	/*padding: 24px;*/
+	/*box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	border-radius: 2px;
 	-moz-border-radius: 2px;
 	-khtml-border-radius: 2px;
-	-webkit-border-radius: 2px;
+	-webkit-border-radius: 2px;*/
 	}
 .widget ul, .widget li {
 	list-style-type: none;
@@ -1586,6 +1594,34 @@ img.alignleft {
 .gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
 	width: 100%;
 }
+.feature-widget {
+	padding: 0 1.66%;
+	width: 30%;
+}
+.feature-widget img {
+	width: 100%;
+}
+.feature-widget p {
+	color: #000;
+}
+.feature-widget h2 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.feature-widget a.button {
+	display: block;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	width: 40%;
+	margin: 12px auto;
+	padding: 6px 0;
+}
+.widget .feature-widget {
+	float: left;
+}
+
 
 /************************************************
 *	15.	RSS Widget								*
@@ -2206,12 +2242,12 @@ a, a:link {
 	-webkit-transition: background .25s, color .25s;
 	-o-transition: background .25s, color .25s;
 	}
-/*.shadow {
+.shadow {
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	}
-*/
+
 .radius-full {
 	border-radius: 2px;
 	-moz-border-radius: 2px;
