@@ -22,11 +22,24 @@
 	/* Theme */
 	
 	.container {
-		//margin: 12px;
+		/*margin: 12px;*/
 		padding: 0px 24px;
 		}
+	#topbar {
+	background: rgb(84, 83, 81);
+	height: 40px;
+	margin: 0 -24px;
+	padding: 0px 24px;
+	}
+	#topbar p {
+		padding-top: 10px;
+		font-size: .75rem;
+	}
+	#topbar p a {
+		font-size: .75rem;
+	}
 	.menu a {
-		font-size: 0.85em;
+		font-size: 1em;
 		padding: 0px 10px;
 		margin-left: 0px;
 		}
@@ -60,6 +73,15 @@
 	.home-news.padding-big .article {
 		padding: 18px;
 		}
+	.featured-pages .holder .information,
+	.featured-pages .holder.first .information,
+	.featured-pages .holder.last .information, .feature-widget {
+		margin: 0 auto;
+		width: 90%;
+		}
+	.widget .feature-widget {
+		float: none;
+	}
 	.search-results .post-author p {
 		float: left;
 		display: block;
@@ -79,10 +101,6 @@
 		text-align: center;
 		margin-top: 18px;
 		}
-	.featured-pages p {
-		width: 80%;
-		margin: 0 auto;
-	}
 	.featured-pages a.button {
 		width: 60%;
 	}
@@ -297,8 +315,8 @@
 	.featured-pages .holder .information,
 	.featured-pages .holder.first .information,
 	.featured-pages .holder.last .information {
-		margin-left: 0px;
-		margin-right: 0px;
+		margin: 0 auto;
+		width: 90%;
 		}
 	.home-news .information .feature-img {
 		margin-right: 0px;
@@ -396,14 +414,14 @@
 		padding: 0px 10px;
 	}
 	#topbar p {
-		padding-top: 10px;
-		font-size: .75rem;
+		padding-top: 12px;
+		font-size: .55rem;
 	}
 	#topbar p a {
-		font-size: .75rem;
+		font-size: .55rem;
 	}
 	#logo img {
-		width: 60%;
+		width: 50%;
 		margin: 20px auto;
 		float: none;
 	}
