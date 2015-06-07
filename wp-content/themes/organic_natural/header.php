@@ -47,10 +47,10 @@
 	<!-- BEGIN .container -->
 	<div class="container">
 
-	<! -- BEGIN #topbar -->
+	<!-- BEGIN #topbar -->
 		<div id="topbar">
 			<p class="left">We Are About Relationships</p>
-			<p class="right"><a href="#">Contact Us</a></p>
+			<p class="right"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) ); ?>">Contact Us</a></p>
 		</div>
 	<!-- END #topbar -->
 	
@@ -65,7 +65,8 @@
 				
 				<?php if (is_home() || is_front_page() ) { ?>
 					<?php $natural_logo = natural_get_logo_url(); if ( ! empty( $natural_logo ) ) { ?>
-						<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( natural_get_logo_url() ); ?>" alt="<?php esc_attr( bloginfo('name') ); ?>" /><?php bloginfo( 'name' ); ?></a></h1>
+						<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_bloginfo('template_directory');?>/images/LOGO.png" alt="<?php esc_attr( bloginfo('name') ); ?>" /><?php bloginfo( 'name' ); ?></a></h1>
+
 					<?php } else { ?>
 						<?php if(of_get_option('display_site_title') == '1') { ?>
 							<div id="masthead">
@@ -76,7 +77,7 @@
 					<?php } ?>
 				<?php } else { ?>
 					<?php $natural_logo = natural_get_logo_url(); if ( ! empty( $natural_logo ) ) { ?>
-						<p id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( natural_get_logo_url() ); ?>" alt="<?php esc_attr( bloginfo('name') ); ?>" /><?php bloginfo( 'name' ); ?></a></p>
+						<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_bloginfo('template_directory');?>/images/LOGO.png" alt="<?php esc_attr( bloginfo('name') ); ?>" /><?php bloginfo( 'name' ); ?></a></h1>
 					<?php } else { ?>
 						<?php if(of_get_option('display_site_title') == '1') { ?>
 							<div id="masthead">

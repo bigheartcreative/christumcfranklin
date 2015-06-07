@@ -299,12 +299,12 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 	border: none;
 	}
 .headline {
+	font-family: "Oswald", "Helvetica Nueue", Helvetica, Arial, sans-serif;
 	font-size: 2.7em;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: uppercase;
-	text-shadow: 3px 3px 0px rgba(0, 0, 0, .1);
 	line-height: 1.1;
-	letter-spacing: -1.4px;
+	letter-spacing: 1px;
 	margin: 0px 0px 12px 0px;
 	padding: 0px;
 	}
@@ -387,7 +387,7 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 #logo img {
 	display: block;
 	height: auto;
-	margin: /*0px auto 0px;*/  40px auto;
+	margin: 20px auto 40px;
 	padding: 0px;
 	vertical-align: bottom;
 	float: left; /* FLOAT MAIN LOGO LEFT */
@@ -633,6 +633,7 @@ ul.menu li li li.sfHover ul {
 
 #menu-main-menu {
 	float: right;
+	margin-top: 15px;
 }
 
 /*** ARROWS **/
@@ -899,6 +900,10 @@ html[xmlns] .slides {
 .homepage .third {
 	float: left;
 	}
+.inner_page_article h2{
+	text-align: left;
+	font-size: 30px;
+}
 .featured-pages {
 	display: inline-block;
 	width: 100%;
@@ -1003,16 +1008,18 @@ html[xmlns] .slides {
 	background: #FFFFFF;
 	margin-bottom: 24px;
 	//padding: 36px;
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
-	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
-	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	border-radius: 2px;
 	-moz-border-radius: 2px;
 	-khtml-border-radius: 2px;
 	-webkit-border-radius: 2px;
+	border-bottom: 1px solid rgb(204, 204, 204);
 	}
-.postarea.full {
+.postarea p {
+	color: #000;
+}
+.postarea.full a {
 	//padding: 48px;
+	color: rgb(0, 153, 227);
 	}
 .postarea.middle {
 	padding: 24px;
@@ -1081,6 +1088,9 @@ html[xmlns] .slides {
 	}
 .bypostauthor {
 	}
+.content_area {
+	padding-bottom: 75px;
+}
 	
 /************************************************
 *	8.	Social Media   							*
@@ -1325,7 +1335,9 @@ img.alignleft {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	}
-	
+	.img-holder a img {
+		width: 100%;
+	}
 /************************************************
 *	11.	Portfolio 								*
 ************************************************/
@@ -1525,14 +1537,14 @@ img.alignleft {
 .widget {
 	background: #FFFFFF;
 	margin-bottom: 24px;
-	padding: 24px;
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
+	/*padding: 24px;*/
+	/*box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	border-radius: 2px;
 	-moz-border-radius: 2px;
 	-khtml-border-radius: 2px;
-	-webkit-border-radius: 2px;
+	-webkit-border-radius: 2px;*/
 	}
 .widget ul, .widget li {
 	list-style-type: none;
@@ -1579,6 +1591,34 @@ img.alignleft {
 .gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
 	width: 100%;
 }
+.feature-widget {
+	padding: 0 1.66%;
+	width: 30%;
+}
+.feature-widget img {
+	width: 100%;
+}
+.feature-widget p {
+	color: #000;
+}
+.feature-widget h2 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.feature-widget a.button {
+	display: block;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	width: 40%;
+	margin: 12px auto;
+	padding: 6px 0;
+}
+.widget .feature-widget {
+	float: left;
+}
+
 
 /************************************************
 *	15.	RSS Widget								*
@@ -1759,7 +1799,7 @@ img.alignleft {
 
 .footer {
 	background: rgba(0, 0, 0, .06);
-	max-width: 1176px;  /* Originally 1120px */
+	max-width: 100%
 	margin: 0px auto 0px;
 	padding: 0px;
 	overflow: hidden;
@@ -2204,6 +2244,7 @@ a, a:link {
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, .24);
 	}
+
 .radius-full {
 	border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -2334,7 +2375,7 @@ a, a:link {
 	padding: 0px;
 	}
 .container { 
-	max-width: 1080px;
+	max-width: 100%;
 	margin: 0px auto 0px;
 	padding: 0px 48px;
 	background: #fff;  /* CHANGE BACKGROUND TO WHITE */

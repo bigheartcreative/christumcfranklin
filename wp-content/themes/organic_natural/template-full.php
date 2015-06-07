@@ -24,9 +24,10 @@ get_header(); ?>
 		<div class="sixteen columns">
 	
 			<!-- BEGIN .postarea full -->
-			<div class="postarea full">
+			<div class="postarea full content_area" >
 	
 				<?php get_template_part( 'loop', 'page' ); ?>
+
 	
 			<!-- END .postarea full -->
 			</div>
@@ -38,8 +39,9 @@ get_header(); ?>
 	</div>
 
 <!-- END .post class -->
+</div>
 
-<?php get_sidebar('home'); ?>
+<!-- END .row -->
 </div>
 
 <?php get_footer(); ?>
