@@ -2375,7 +2375,7 @@ a, a:link {
 	padding: 0px;
 	}
 .container { 
-	max-width: 100%;
+	max-width: 1080px;
 	margin: 0px auto 0px;
 	padding: 0px 48px;
 	background: #fff;  /* CHANGE BACKGROUND TO WHITE */
@@ -2431,8 +2431,8 @@ a, a:link {
 #topbar {
 	background: rgb(84, 83, 81);
 	height: 40px;
-	margin: 0 -48px;
-	padding: 5px 48px;
+	margin: 0px;
+	padding: 5px 178.5px;
 }
 
 #topbar p {
