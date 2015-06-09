@@ -44,15 +44,15 @@
 <!-- BEGIN #wrap -->
 <div id="wrap">
 
-	<!-- BEGIN .container -->
-	<div class="container">
-
 	<!-- BEGIN #topbar -->
 		<div id="topbar">
 			<p class="left">We Are About Relationships</p>
 			<p class="right"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) ); ?>">Contact Us</a></p>
 		</div>
 	<!-- END #topbar -->
+
+	<!-- BEGIN .container -->
+	<div class="container">
 	
 		<!-- BEGIN #header -->
 		<div id="header">
