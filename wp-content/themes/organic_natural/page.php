@@ -63,7 +63,7 @@ get_header(); ?>
 			<div class="sixteen columns">
 	
 				<!-- BEGIN .postarea full -->
-				<div class="postarea full">
+				<div class="postarea full" id="home-postarea">
 			
 					<?php get_template_part( 'loop', 'page' ); ?>
 				
