@@ -50,6 +50,7 @@
 
 html, body {
 	height: 100%;
+	overflow-x: hidden;
 	}
 body {
 	background-color: #f1ede6;
@@ -61,7 +62,12 @@ body {
 	margin: 0px;
 	padding: 0px;
 	}
-
+.full-width {
+	margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+  background: rgba(0, 0, 0, 0.5);
+}
 /************************************************
 *	0.	Global									*
 ************************************************/
@@ -2431,9 +2437,14 @@ a, a:link {
 #topbar {
 	background: rgb(84, 83, 81);
 	height: 40px;
-	margin: 0px;
-	padding: 5px 178.5px;
+	margin: 0 -9999rem;
+  	padding: 0.25rem 9999rem;
 }
+
+/*#topbar-content {
+	max-width: 1080px;
+	margin: 0 auto;
+}*/
 
 #topbar p {
 	color: rgb(200, 199, 199);
