@@ -22,8 +22,7 @@
 	<!-- BEGIN .row -->
 	<div class="row" id="footer-upper">
 		
-		
-	
+			
 		<!-- BEGIN .footer-widgets -->
 		<div class="footer-widgets">
 	
@@ -32,8 +31,6 @@
 		
 		<!-- END .footer-widgets -->
 		</div>
-
-	
 	
 	<!-- END .row -->
 	</div>
@@ -41,7 +38,7 @@
 	<?php } ?>
 	
 	<!-- BEGIN .row -->
-	<div class="row">
+	<div class="row" id="footer-lower">
 		
 		<!-- BEGIN .footer-information -->
 		<div class="footer-information">
