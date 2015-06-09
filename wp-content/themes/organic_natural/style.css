@@ -806,7 +806,13 @@ html[xmlns] .slides {
 	overflow: visible;
 	z-index: 9999;
 	}
+.flex-control-nav,
+.flex-direction-nav .flex-prev,
 .flex-direction-nav .flex-next {
+	background: rgb(85, 83, 81);
+}
+.flex-direction-nav .flex-next {
+	color; #fff;
 	right: 0;
 	text-align: center;
 	border-radius: 0px 0px 2px 0px;
@@ -815,6 +821,7 @@ html[xmlns] .slides {
 	-webkit-border-radius: 0px 0px 2px 0px;
 	}
 .flex-direction-nav .flex-prev {
+	color: #fff;
 	left: 0;
 	text-align: center;
 	border-radius: 0px 0px 0px 2px;
@@ -884,6 +891,10 @@ html[xmlns] .slides {
 	border-top: 4px solid #333;
 	margin-top: -4px;
 	cursor: default;
+	}
+.container .flex-control-nav li.flex-active a, 
+.container .flex-control-nav li a.flex-active {
+	border-color: rgb(0, 156, 230);	
 	}
 
 /************************************************
