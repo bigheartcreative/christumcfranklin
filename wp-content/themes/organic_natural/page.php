@@ -18,6 +18,20 @@ get_header(); ?>
 	
 	<!-- BEGIN .row -->
 	<div class="row">
+
+		
+		<?php get_template_part( 'content/gallery', 'slider' ); ?>
+	
+		<?php if (of_get_option('display_slideshow_info') == '1') { ?>
+		
+			<?php if ( is_active_sidebar( 'page-sidebar' ) ) : ?>
+		
+			<?php else : ?>
+		
+			<?php endif; ?>
+	
+		<?php } ?>
+		
 		
 		<?php if ( is_active_sidebar( 'page-sidebar' ) ) : ?>
 		
