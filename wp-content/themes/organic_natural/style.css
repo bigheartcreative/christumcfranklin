@@ -412,6 +412,7 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 #navigation {
 	display: block;
 	color: rgb(102, 102, 102);
+	background: rgb(80, 71, 64);
 	position: relative;
 	font-size: 1.6em;
 	font-weight: 400;
@@ -1814,7 +1815,7 @@ img.alignleft {
 .footer {
 	background: rgba(0, 0, 0, .06);
 	max-width: 100%;
-	margin: 0px auto 0px;
+	margin: 25px auto 0px;
 	padding: 0px;
 	overflow: hidden;
 	}
@@ -2245,7 +2246,37 @@ table td {
 	border-radius: 3px;
 	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .12);
 	}
-	
+.gform_wrapper .gform_footer input.button,.gform_wrapper .gform_footer input[type=submit]{
+font-size:1em;
+font-family:"Open Sans", Helvetica, Arial, sans-serif;
+text-transform: uppercase;
+color: #fff;
+}	
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	background-color: #F9F9F9;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	margin: 12px 0px;
+	padding: 6px 18px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: none;
+	background: #00b6ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00b6ff 0%, #0099e4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b6ff), color-stop(100%,#0099e4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00b6ff 0%,#0099e4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
+}	
+
 /************************************************
 *	24.	CSS3 Styles								*
 ************************************************/
@@ -2492,3 +2523,6 @@ a, a:link {
 .right {
 	float: right;
 }
+
+
+
