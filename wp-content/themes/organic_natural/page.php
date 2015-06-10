@@ -20,7 +20,7 @@ get_header(); ?>
 	<div class="row">
 
 		
-		<?php get_template_part( 'content/gallery', 'slider' ); ?>
+		<?php get_template_part( 'content/featured', 'slider' ); ?>
 	
 		<?php if (of_get_option('display_slideshow_info') == '1') { ?>
 		
