@@ -20,8 +20,9 @@
 	<?php if ( is_active_sidebar('footer') ) { ?>
 	
 	<!-- BEGIN .row -->
-	<div class="row">
-	
+	<div class="row" id="footer-upper">
+		
+			
 		<!-- BEGIN .footer-widgets -->
 		<div class="footer-widgets">
 	
@@ -37,7 +38,7 @@
 	<?php } ?>
 	
 	<!-- BEGIN .row -->
-	<div class="row">
+	<div class="row" id="footer-lower">
 		
 		<!-- BEGIN .footer-information -->
 		<div class="footer-information">

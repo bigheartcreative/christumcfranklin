@@ -50,9 +50,10 @@
 
 html, body {
 	height: 100%;
+	overflow-x: hidden;
 	}
 body {
-	background-color: #f1ede6;
+	background-color: #fff; /*#f1ede6;*/
 	color: #666666;
 	font-size: 0.9em;
 	font-weight: 300;
@@ -61,7 +62,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 	}
-
 /************************************************
 *	0.	Global									*
 ************************************************/
@@ -682,7 +682,7 @@ ul.menu li li li.sfHover ul {
 	display: block;
 	background: #FFFFFF;
 	height: 100%;
-	margin: 0px 0px 24px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px;
 	position: relative;
 	}
@@ -806,7 +806,13 @@ html[xmlns] .slides {
 	overflow: visible;
 	z-index: 9999;
 	}
+.flex-control-nav,
+.flex-direction-nav .flex-prev,
 .flex-direction-nav .flex-next {
+	background: rgb(85, 83, 81);
+}
+.flex-direction-nav .flex-next {
+	color; #fff;
 	right: 0;
 	text-align: center;
 	border-radius: 0px 0px 2px 0px;
@@ -815,6 +821,7 @@ html[xmlns] .slides {
 	-webkit-border-radius: 0px 0px 2px 0px;
 	}
 .flex-direction-nav .flex-prev {
+	color: #fff;
 	left: 0;
 	text-align: center;
 	border-radius: 0px 0px 0px 2px;
@@ -884,6 +891,10 @@ html[xmlns] .slides {
 	border-top: 4px solid #333;
 	margin-top: -4px;
 	cursor: default;
+	}
+.container .flex-control-nav li.flex-active a, 
+.container .flex-control-nav li a.flex-active {
+	border-color: rgb(0, 156, 230);	
 	}
 
 /************************************************
@@ -1004,6 +1015,9 @@ html[xmlns] .slides {
 	padding-bottom: 24px;
 	border-bottom: 1px solid rgba(0,0,0, .08);
 	}
+#home-postarea {
+	border-bottom: none;
+}
 .postarea {
 	background: #FFFFFF;
 	margin-bottom: 24px;
@@ -1799,7 +1813,7 @@ img.alignleft {
 
 .footer {
 	background: rgba(0, 0, 0, .06);
-	max-width: 100%
+	max-width: 100%;
 	margin: 0px auto 0px;
 	padding: 0px;
 	overflow: hidden;
@@ -1823,6 +1837,9 @@ img.alignleft {
 	font-size: 0.9em;
 	line-height: 1.8;
 	}
+#footer-upper {
+	background: rgb(227, 227, 227);
+}
 .footer-widgets {
 	background: rgb(227, 227, 227);
 	margin: 0px auto 0px;
@@ -1830,6 +1847,7 @@ img.alignleft {
 	overflow: hidden;
 	border-top: 1px solid rgb(204, 204, 204);
 	border-bottom: 1px solid rgb(204, 204, 204);
+	max-width: 1080px;
 	}
 .footer-widgets .widget {
 	float: left;
@@ -1845,10 +1863,15 @@ img.alignleft {
 .footer-widgets .widget .footer-widget {
 	padding: 12px;
 	}
+#footer-lower {
+
+}
 .footer-information {
 	background: rgb(238, 238, 238);
+	margin: 0 auto;
 	padding: 48px;
 	overflow: hidden;
+	max-width: 1080px;
 	}
 .footer-information p {
 	color: rgb(129, 129, 129);
@@ -2375,7 +2398,7 @@ a, a:link {
 	padding: 0px;
 	}
 .container { 
-	max-width: 100%;
+	max-width: 1080px;
 	margin: 0px auto 0px;
 	padding: 0px 48px;
 	background: #fff;  /* CHANGE BACKGROUND TO WHITE */
@@ -2431,10 +2454,9 @@ a, a:link {
 #topbar {
 	background: rgb(84, 83, 81);
 	height: 40px;
-	margin: 0 -48px;
-	padding: 5px 48px;
+	margin: 0 -9999rem;
+  	padding: 0.25rem 9999rem;
 }
-
 #topbar p {
 	color: rgb(200, 199, 199);
 	letter-spacing: 2px;

@@ -456,7 +456,7 @@ div.gf_page_steps+div.validation_error { margin-top: 1em }
     margin-left: 30%;
     width: 64%;
 }
-.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] { font-size: 1em }
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] { font-size: 1em; }
 .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_footer input[type=image] {
     display: -moz-inline-stack;
     display: inline-block;
