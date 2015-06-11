@@ -260,8 +260,8 @@ h3 {
 h4 {
 	color: #333333;
 	font-size: 1.6em;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: normal;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
 	line-height: 1.4;
 	margin: 4px 0px 4px 0px;
 	padding: 4px 0px 4px 0px;
@@ -2523,6 +2523,3 @@ a, a:link {
 .right {
 	float: right;
 }
-
-
-
