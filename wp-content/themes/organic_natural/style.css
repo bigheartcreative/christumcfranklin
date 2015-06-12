@@ -636,6 +636,9 @@ ul.menu li li li.sfHover ul {
 	float: right;
 	margin-top: 15px;
 }
+#menu-main-menu li a {
+	color: rgb(102, 102, 102);
+}
 
 /*** ARROWS **/
 .sf-arrows .sf-with-ul {
@@ -2129,6 +2132,11 @@ a.button:hover, .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLin
 .more-link {
 	margin-top: 24px !important;
 	}
+.button[rel~="bookmark"] {
+	color: #fff !important;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
 	
 /************************************************
 *	22. Tables		 							*
