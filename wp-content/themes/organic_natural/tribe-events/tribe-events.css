@@ -41,3 +41,12 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
 }
 
+@media only screen and (max-width: 768px) {
+	.tribe-events-calendar td.tribe-events-present.mobile-active,
+	.tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-],
+	.tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-] a  {
+		background: rgb(0, 153, 227);
+	}
+
+}
+
