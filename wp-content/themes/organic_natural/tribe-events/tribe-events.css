@@ -8,13 +8,6 @@
 	border-right: 1px solid rgb(84, 83, 81);
 }
 
-#tribe-events-content .tribe-events-calendar .mobile-active:hover,
-.tribe-events-calendar td.mobile-active,
-.tribe-events-calendar .mobile-active div[id*=tribe-events-daynum-],
-.tribe-events-calendar .mobile-active div[id*=tribe-events-daynum-] a {
-	background: rgb(0, 153, 227);
-}
-
 .tribe-events-sub-nav li a {
 	background: none;
 }
@@ -43,12 +36,27 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
 }
 
-@media only screen and (max-width: 768px) {
-	.tribe-events-calendar td.tribe-events-present.mobile-active,
-	.tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-],
-	.tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-] a  {
-		background: rgb(0, 153, 227);
-	}
 
+@media only screen and (min-width: 769px) {
+	.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+	.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] a {
+	background: rgb(0, 153, 227);
+	}
 }
 
+@media only screen and (max-width: 768px) {
+	.tribe-events-calendar td.mobile-active,
+	#tribe-events-content .tribe-events-calendar td.tribe-events-present.mobile-active:hover,
+	.tribe-events-calendar td.tribe-events-present.mobile-active,
+	.tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-],
+	.tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-] a,
+	#tribe-events-content .tribe-events-calendar .mobile-active:hover, 
+	#tribe-events-content .tribe-events-calendar td.tribe-events-othermonth.mobile-active,
+	#tribe-events-content .tribe-events-calendar td.tribe-events-othermonth.mobile-active div[id*=tribe-events-daynum-],
+	#tribe-events-content .tribe-events-calendar td.tribe-events-othermonth.mobile-active div[id*=tribe-events-daynum-] a,
+	#tribe-events-content .tribe-events-calendar .mobile-active:hover,
+	.tribe-events-calendar .mobile-active div[id*=tribe-events-daynum-],
+	.tribe-events-calendar .mobile-active div[id*=tribe-events-daynum-] a  {
+		background: rgb(0, 153, 227);
+	}
+}
