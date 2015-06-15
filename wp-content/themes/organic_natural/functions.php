@@ -257,34 +257,10 @@ if ( function_exists('register_sidebars') )
 		'before_title'=>'<h6>',
 		'after_title'=>'</h6>'
 	));
-	register_sidebar(array(
-		'name'=> __( "Feature Left", 'organicthemes' ),
-		'id' => 'feature-left',
-		'before_widget'=>'</div></div><div class="row"><div class="holder"><div id="%1$s" class="widget %2$s"><div class="feature-widget">',
-		'after_widget'=>'</div></div></div>',
-		'before_title'=>'<h6>',
-		'after_title'=>'</h6>'
-    ));
-	register_sidebar(array(
-		'name'=> __( "Feature Middle", 'organicthemes' ),
-		'id' => 'feature-middle',
-		'before_widget'=>'<div class="holder"><div id="%1$s" class="widget %2$s"><div class="feature-widget">',
-		'after_widget'=>'</div></div></div>',
-		'before_title'=>'<h6>',
-		'after_title'=>'</h6>'
-    ));
-	register_sidebar(array(
-		'name'=> __( "Feature Right", 'organicthemes' ),
-		'id' => 'feature-right',
-		'before_widget'=>'<div class="holder"><div id="%1$s" class="widget %2$s"><div class="feature-widget">',
-		'after_widget'=>'</div></div></div></div>',
-		'before_title'=>'<h6>',
-		'after_title'=>'</h6>'
-    ));
 
 /*-----------------------------------------------------------------------------------------------------//
-Sidebar widget shortcode for WP Admin
--------------------------------------------------------------------------------------------------------*/
+Sidebar widget shortcode for WP Admin // Replaced by Stag Plugin
+-------------------------------------------------------------------------------------------------------
 function cumc_sidebar_shortcode($atts, $content="null"){
   extract(shortcode_atts(array('name'=>''), $atts));
 
@@ -298,7 +274,9 @@ function cumc_sidebar_shortcode($atts, $content="null"){
  
 add_shortcode('cumc_feature', 'cumc_sidebar_shortcode');
 
-/*-----------------------------------------------------------------------------------------------------//	
+/
+
+*-----------------------------------------------------------------------------------------------------//	
 	Filter post title for post format links	       	     	 
 -------------------------------------------------------------------------------------------------------*/
 

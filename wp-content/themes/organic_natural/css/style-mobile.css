@@ -70,14 +70,18 @@
 		}
 	.featured-pages .article,
 	.home-news .article,
-	.home-news.padding-big .article {
+	.home-news.padding-big .article,
+	.stag-custom-widget-area .article {
 		padding: 18px;
 		}
 	.featured-pages .holder .information,
 	.featured-pages .holder.first .information,
-	.featured-pages .holder.last .information, .feature-widget {
+	.featured-pages .holder.last .information, .feature-widget,
+	.stag-custom-widget-area .holder .information,
+	.stag-custom-widget-area .holder.first .information,
+	.stag-custom-widget-area .holder.last .information, .feature-widget {
 		margin: 0 auto;
-		width: 90%;
+		width: 96%;
 		}
 	.widget .feature-widget {
 		float: left;
@@ -106,7 +110,8 @@
 		text-align: center;
 		margin-top: 18px;
 		}
-	.featured-pages a.button {
+	.featured-pages a.button,
+	.stag-custom-widget-area a.button {
 		width: 60%;
 	}
 	.footer-information p {
@@ -313,24 +318,30 @@
 		display: none;
 		}
 	.slideshow,
-	.featured-pages .holder {
+	.featured-pages .holder,
+	.stag-custom-widget-area .holder {
 		margin-bottom: 12px;
 		}
 	.featured-pages,
-	.featured-posts {
+	.featured-posts,
+	.stag-custom-widget-area {
 		margin-bottom: 0px;
 		}
-	.widget .feature-widget{
+	.widget .feature-widget,
+	section.stag-custom-widget-area{
 		float: none;
-		width: 90%;
+		width: 96%;
 		margin-bottom: 3em;
 		border-bottom: 1px solid rgb(204, 204, 204);
 	}
 	.featured-pages .holder .information,
 	.featured-pages .holder.first .information,
-	.featured-pages .holder.last .information {
+	.featured-pages .holder.last .information,
+	.stag-custom-widget-area .holder .information,
+	.stag-custom-widget-area .holder.first .information,
+	.stag-custom-widget-area .holder.last .information {
 		margin: 0 auto;
-		width: 90%;
+		width: 96%;
 		}
 	.home-news .information .feature-img {
 		margin-right: 0px;
@@ -450,10 +461,12 @@
 	.footer p {
 		letter-spacing: 0px;
 	}
-	.featured-pages a.button {
+	.featured-pages a.button,
+	.stag-custom-widget-area a.button {
 		width: 40%;
 	}
-	.featured-pages .article {
+	.featured-pages .article,
+	.stag-custom-widget-area .article {
 		margin-bottom: 2em;
 	}
 

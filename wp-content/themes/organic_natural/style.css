@@ -83,10 +83,11 @@ hr {
 	border: 0;
 	width: 100%;
 	height: 1px;
-	color: #DDDDDD;
-	background-color: #DDDDDD;
-	margin: 6px 0px 8px 0px;
+	color: rgb(204, 204, 204);
+	background-color: rgb(204, 204, 204);
+	margin: 3em 0;
 	padding: 0px;
+	float: left
 	}
 ol, ul {
 	list-style: none;
@@ -1021,12 +1022,12 @@ html[xmlns] .slides {
 .postarea {
 	background: #FFFFFF;
 	margin-bottom: 24px;
-	//padding: 36px;
+	/*padding: 36px;*/
 	border-radius: 2px;
 	-moz-border-radius: 2px;
 	-khtml-border-radius: 2px;
 	-webkit-border-radius: 2px;
-	border-bottom: 1px solid rgb(204, 204, 204);
+	/*border-bottom: 1px solid rgb(204, 204, 204);*/
 	}
 .postarea p {
 	color: #000;
@@ -1605,21 +1606,26 @@ img.alignleft {
 .gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
 	width: 100%;
 }
-.feature-widget {
+.feature-widget,
+.stag-custom-widget-area {
 	padding: 0 1.66%;
 	width: 30%;
 }
-.feature-widget img {
+.feature-widget img,
+.stag-custom-widget-area img {
 	width: 100%;
 }
-.feature-widget p {
+.feature-widget p,
+.stag-custom-widget-area p {
 	color: #000;
 }
-.feature-widget h2 {
+.feature-widget h2,
+.stag-custom-widget-area h2 {
 	font-weight: 400;
 	text-transform: uppercase;
 }
-.feature-widget a.button {
+.feature-widget a.button,
+.stag-custom-widget-area a.button {
 	display: block;
 	margin-bottom: 0px;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -1629,8 +1635,9 @@ img.alignleft {
 	margin: 12px auto;
 	padding: 6px 0;
 }
-.widget .feature-widget {
-	float: left;
+.widget .feature-widget,
+section.stag-custom-widget-area {
+	float: left !important;
 }
 
 

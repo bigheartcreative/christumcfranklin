@@ -57,6 +57,7 @@ get_header(); ?>
 			<!-- END .five columns -->
 			</div>
 	
+<!--
 		<?php else : ?>
 	
 			<!-- BEGIN .sixteen columns -->
@@ -82,7 +83,9 @@ get_header(); ?>
 </div>
 
 
-<!-- BELOW TAKEN FROM HOME.PHP -->
+<!-- BELOW TAKEN FROM HOME.PHP  -->
+
+<?php if ( is_front_page() ) { ?>
 
 <!-- BEGIN .row -->
 <div class="row">
@@ -91,33 +94,33 @@ get_header(); ?>
 	<div class="homepage">
 	
 	<?php if (of_get_option('display_home_mid') == '1') { ?>
-	<?php if ( 'false' != of_get_option( 'page_left' ) && 'false' != of_get_option( 'page_mid' ) && 'false' != of_get_option( 'page_right' ) ) { ?>
-		
-		<!-- BEGIN .featured-pages -->
-		<div class="featured-pages radius-full">
-		
-			<div class="holder third first">
-				<?php $recent = new WP_Query('page_id='.of_get_option('page_left')); while($recent->have_posts()) : $recent->the_post(); ?>
-					<?php get_template_part( 'content/home', 'page' ); ?>
-				<?php endwhile; ?>
-			</div>
+		<?php if ( 'false' != of_get_option( 'page_left' ) && 'false' != of_get_option( 'page_mid' ) && 'false' != of_get_option( 'page_right' ) ) { ?>
 			
-			<div class="holder third">
-				<?php $recent = new WP_Query('page_id='.of_get_option('page_mid')); while($recent->have_posts()) : $recent->the_post(); ?>
-					<?php get_template_part( 'content/home', 'page' ); ?>
-				<?php endwhile; ?>
-			</div>
+			<!-- BEGIN .featured-pages -->
+			<div class="featured-pages radius-full">
 			
-			<div class="holder third last">
-				<?php $recent = new WP_Query('page_id='.of_get_option('page_right')); while($recent->have_posts()) : $recent->the_post(); ?>
-					<?php get_template_part( 'content/home', 'page' ); ?>
-				<?php endwhile; ?>
+				<div class="holder third first">
+					<?php $recent = new WP_Query('page_id='.of_get_option('page_left')); while($recent->have_posts()) : $recent->the_post(); ?>
+						<?php get_template_part( 'content/home', 'page' ); ?>
+					<?php endwhile; ?>
+				</div>
+				
+				<div class="holder third">
+					<?php $recent = new WP_Query('page_id='.of_get_option('page_mid')); while($recent->have_posts()) : $recent->the_post(); ?>
+						<?php get_template_part( 'content/home', 'page' ); ?>
+					<?php endwhile; ?>
+				</div>
+				
+				<div class="holder third last">
+					<?php $recent = new WP_Query('page_id='.of_get_option('page_right')); while($recent->have_posts()) : $recent->the_post(); ?>
+						<?php get_template_part( 'content/home', 'page' ); ?>
+					<?php endwhile; ?>
+				</div>
+			
+			<!-- END .featured-pages -->
 			</div>
-		
-		<!-- END .featured-pages -->
-		</div>
 
-<?php } ?>
+		<?php } ?>
 	<?php } ?>
 	
 	
@@ -128,5 +131,7 @@ get_header(); ?>
 
 <!-- END .row -->
 </div>
+<?php } ?>
+
 
 <?php get_footer(); ?>
