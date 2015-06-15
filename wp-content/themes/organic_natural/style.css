@@ -251,7 +251,7 @@ h2 {
 h3 {
 	color: #333333;
 	font-size: 2em;
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Oswald', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.4;
 	letter-spacing: -0.4px;
@@ -261,8 +261,8 @@ h3 {
 h4 {
 	color: #333333;
 	font-size: 1.6em;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: normal;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
 	line-height: 1.4;
 	margin: 4px 0px 4px 0px;
 	padding: 4px 0px 4px 0px;
@@ -413,6 +413,7 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 #navigation {
 	display: block;
 	color: rgb(102, 102, 102);
+	background: rgb(80, 71, 64);
 	position: relative;
 	font-size: 1.6em;
 	font-weight: 400;
@@ -635,6 +636,9 @@ ul.menu li li li.sfHover ul {
 #menu-main-menu {
 	float: right;
 	margin-top: 15px;
+}
+#menu-main-menu li a {
+	color: rgb(102, 102, 102);
 }
 
 /*** ARROWS **/
@@ -1821,7 +1825,7 @@ section.stag-custom-widget-area {
 .footer {
 	background: rgba(0, 0, 0, .06);
 	max-width: 100%;
-	margin: 0px auto 0px;
+	margin: 25px auto 0px;
 	padding: 0px;
 	overflow: hidden;
 	}
@@ -2135,6 +2139,11 @@ a.button:hover, .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLin
 .more-link {
 	margin-top: 24px !important;
 	}
+.button[rel~="bookmark"] {
+	color: #fff !important;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
 	
 /************************************************
 *	22. Tables		 							*
@@ -2142,7 +2151,7 @@ a.button:hover, .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLin
 
 table {
 	background: #FFFFFF;
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	width: 100%;
 	margin: 20px 0px;
 	padding: 0px;
@@ -2252,7 +2261,37 @@ table td {
 	border-radius: 3px;
 	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .12);
 	}
-	
+.gform_wrapper .gform_footer input.button,.gform_wrapper .gform_footer input[type=submit]{
+font-size:1em;
+font-family:"Open Sans", Helvetica, Arial, sans-serif;
+text-transform: uppercase;
+color: #fff;
+}	
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	background-color: #F9F9F9;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	margin: 12px 0px;
+	padding: 6px 18px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: none;
+	background: #00b6ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00b6ff 0%, #0099e4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b6ff), color-stop(100%,#0099e4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00b6ff 0%,#0099e4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
+}	
+
 /************************************************
 *	24.	CSS3 Styles								*
 ************************************************/
