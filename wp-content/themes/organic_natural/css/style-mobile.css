@@ -72,7 +72,7 @@
 	.home-news .article,
 	.home-news.padding-big .article,
 	.stag-custom-widget-area .article {
-		padding: 18px;
+		padding: 18px 18px 64px;
 		}
 	.featured-pages .holder .information,
 	.featured-pages .holder.first .information,

@@ -945,8 +945,12 @@ html[xmlns] .slides {
 	margin-left: 16px;
 	}
 .featured-pages .article {
-	padding: 24px;
+	padding: 24px 24px 64px;
 	}
+.featured-pages .learn-more {
+	top:-64px;
+	position: relative;
+}
 .featured-pages a.button {
 	display: block;
 	margin-bottom: 0px;
@@ -956,6 +960,7 @@ html[xmlns] .slides {
 	width: 40%;
 	margin: 12px auto;
 	padding: 6px 0;
+	bottom: 0 !important;
 	}
 .featured-posts {
 	display: inline-block;
