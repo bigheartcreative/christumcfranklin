@@ -3,10 +3,15 @@
 
 <h1 class="headline"><?php the_title(); ?></h1>
 
+<?php 
+/* CUMC remove ?>
+
 <div class="post-author">
 	<p class="align-left"><i class="icon-time"></i> &nbsp;<?php _e("Posted on", 'organicthemes'); ?> <?php the_time(__("F j, Y", 'organicthemes')); ?> <?php _e("by", 'organicthemes'); ?> <?php esc_url ( the_author_posts_link() ); ?></p>
 	<p class="align-right"><i class="icon-comment"></i> &nbsp;<a class="scroll" href="<?php the_permalink(); ?>#comments"><?php comments_number(__("Leave a Comment", 'organicthemes'), __("1 Comment", 'organicthemes'), '% Comments'); ?></a></p>
 </div>
+
+/* END CUMC remove */ ?>
 
 <?php if (has_post_format('gallery')) { ?>
 
@@ -72,7 +77,10 @@
 <!-- END .post-navigation -->
 </div>
 
-<?php if ( comments_open() || '0' != get_comments_number() ) comments_template(); ?>
+<?php 
+/* CUMC remove
+if ( comments_open() || '0' != get_comments_number() ) comments_template();
+/* END CUMC remove */ ?>
 
 <div class="clear"></div>
 

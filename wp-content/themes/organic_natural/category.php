@@ -71,6 +71,7 @@ get_header(); ?>
 			
 			<!-- END .thirteen columns -->
 			</div>
+
 	
 		<?php else : ?>
 		

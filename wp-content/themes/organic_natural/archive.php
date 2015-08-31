@@ -98,6 +98,8 @@ get_header(); ?>
 				
 			<!-- END .five columns -->
 			</div>
+		
+		<?php END CUMC REMOVE SIDEBAR FOR POSTS */  ?>
 	
 		<?php else : ?>
 	
