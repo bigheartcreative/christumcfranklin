@@ -1830,7 +1830,7 @@ section.stag-custom-widget-area {
 .footer {
 	background: rgba(0, 0, 0, .06);
 	max-width: 100%;
-	margin: 25px auto 0px;
+	margin: 0 auto 0px;
 	padding: 0px;
 	overflow: hidden;
 	}
@@ -1880,10 +1880,9 @@ section.stag-custom-widget-area {
 	padding: 12px;
 	}
 #footer-lower {
-
+	background: rgb(238, 238, 238);
 }
 .footer-information {
-	background: rgb(238, 238, 238);
 	margin: 0 auto;
 	padding: 48px;
 	overflow: hidden;
@@ -2451,7 +2450,7 @@ a, a:link {
 .container { 
 	max-width: 1080px;
 	margin: 0px auto 0px;
-	padding: 0px 48px;
+	padding: 0px 48px 25px;
 	background: #fff;  /* CHANGE BACKGROUND TO WHITE */
 	}
 .row { 
