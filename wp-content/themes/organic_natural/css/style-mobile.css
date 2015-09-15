@@ -474,6 +474,7 @@
 	/* Grid */
 	
 	body { 
+		-webkit-overflow-scrolling: touch;
 		-webkit-text-size-adjust: none; 
 		-ms-text-size-adjust: none; 
 		width: 100%; 
