@@ -2294,7 +2294,11 @@ color: #fff;
 	background: -ms-linear-gradient(top,  #00b6ff 0%,#0099e4 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #00b6ff 0%,#0099e4 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
-}	
+}
+
+#recaptcha_widget_div {
+	overflow:hidden;
+}
 
 /************************************************
 *	24.	CSS3 Styles								*
