@@ -2296,8 +2296,9 @@ color: #fff;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b6ff', endColorstr='#0099e4',GradientType=0 ); /* IE6-9 */
 }
 
-#recaptcha_widget_div {
-	overflow:hidden;
+#cumc_recaptcha {
+    transform: scale(.8);
+	transform-origin: left top;
 }
 
 /************************************************

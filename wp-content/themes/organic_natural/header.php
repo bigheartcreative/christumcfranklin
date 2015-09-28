@@ -36,6 +36,15 @@
 <!-- Social Buttons -->
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 
+<!-- Recaptcha -->
+<script type="text/javascript">
+  var onloadCallback = function() {
+    grecaptcha.render('cumc_recaptcha', {
+      'sitekey' : '6Ld4ow0TAAAAAH052g_d1jH4BSdGZ1CfrrhRjw4p',
+      'size'    : 'normal'
+    });
+  };
+</script>
 <?php wp_head(); ?>
 </head>
 

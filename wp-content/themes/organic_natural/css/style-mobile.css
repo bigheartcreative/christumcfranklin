@@ -123,6 +123,10 @@
 	.footer p {
 		letter-spacing: 0;
 	}
+	#cumc_recaptcha {
+	    transform: scale(.6);
+		transform-origin: left top;
+	}
 }
 	
 /* iPhone */
@@ -527,4 +531,12 @@
 		width:100% !important;
 		height: auto !important;
 	}
+	
+	/* Captcha */
+	#cumc_recaptcha {
+	    transform: scale(1);
+		transform-origin: left top;
+	}
+	
+	
 }
