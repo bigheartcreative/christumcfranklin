@@ -17,6 +17,7 @@ wp-config.php
 wp-content/uploads/
 wp-content/cache/
 wp-content/backups/
+wp-content/plugins/
 sitemap.xml
 sitemap.xml.gz
 wp-activate.php

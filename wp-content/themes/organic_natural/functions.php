@@ -135,7 +135,6 @@ if( !function_exists('natural_enqueue_scripts') ) {
 		wp_enqueue_script( 'natural-custom', get_template_directory_uri() . '/js/jquery.custom.js', array( 'jquery', 'natural-superfish', 'natural-fitvids', 'natural-isotope', 'jquery-masonry' ), '20130729', true );
 		wp_enqueue_script( 'natural-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20130729', true );
 		wp_enqueue_script( 'twitter_js', 'http://platform.twitter.com/widgets.js', '', '', false);
-		wp_enqueue_script( 'recaptcha', 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit', '', '', true );
 		
 		// IE Conditional Scripts
 		global $wp_scripts;
